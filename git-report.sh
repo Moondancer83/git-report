@@ -31,9 +31,9 @@ total=$(git log $INSPECTED_BRANCH --oneline --since="$SINCE" --until="$UNTIL" | 
 
 printf "┌───────────────────────────┐\n"
 printf "│ Report on commits         │\n"
+printf "│ %10s   %12s │\n" "on branch" "$INSPECTED_BRANCH"
 printf "│ %10s   %12s │\n" "from" "$SINCE"
 printf "│ %10s   %12s │\n" "to" "$UNTIL"
-printf "│ %10s   %12s │\n" "on branch" "$INSPECTED_BRANCH"
 printf "│ %-25s │\n" " "
 printf "│ %-17s │ %5s │\n" "Commit type" "Count"
 printf "├───────────────────┼───────┤\n"
